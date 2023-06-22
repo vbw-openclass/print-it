@@ -24,7 +24,7 @@ const arrowLeft = document.querySelector('.arrow_left');
 const arrowRight = document.querySelector('.arrow_right');
 const bannerImg = document.querySelector('.banner-img');
 const tagLineElement = document.querySelector('#banner p');
-const dots = document.querySelector('.dot');
+const dots = document.querySelectorAll('.dot');
 // Variable pour suivre l'index de la diapositive active
 let currentSlideIndex = 0;
 
@@ -76,3 +76,5 @@ arrowLeft.addEventListener('click', previousSlide);
 
 // Ajout de l'écouteur d'événement sur le clic
 arrowRight.addEventListener('click', nextSlide);
+
+updateSlide();
